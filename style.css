@@ -61,12 +61,53 @@ head-content
     margin-right: 55px;
 }
 
+@keyframes sliding {
+    0%{
+        top: -101px;
+        left: 45px;
+    }
+
+    15%{
+        top: 649px;
+        left: 45px;
+      
+    }
+
+    30%{
+       top:569px;
+       left: 191px;
+    }
+
+    45%{
+        top: 649px;
+        left: 301px;
+    }
+    
+
+    60%{
+        top: 451px;
+        left: 451px;
+    }
+
+    75%{
+        top: 649px;
+        left: 651px;
+    }
+
+    100%{
+        top: 649px;
+        left: 1501px;
+    }
+}
+
 .ball{
     position: absolute;
     height: 51px;
     width: 51px !important;
-    top: 35px;
-    left: 125px;
+    top: -135px;
+    left: 43px;
+    animation: sliding 5s ease-in-out 1s infinite  ;
+    animation-play-state: running;
 }
 
 
